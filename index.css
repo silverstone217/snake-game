@@ -1,0 +1,86 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    top: 0px !important; bottom: 0px !important; left: 0px !important; right: 0px !important;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: burlywood;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button:hover{
+    cursor: pointer !important;
+    background-color: black !important;
+    color: aliceblue;
+}
+h3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -5px;
+}
+h2{
+    margin-bottom: -5px;
+}
+canvas{
+    margin-bottom: 10px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .arrowbtn{
+        display: flex;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .up{
+        position: absolute;
+        cursor: pointer;
+        width: 100px;
+    }
+    .down{
+        position: absolute;
+        margin-top: 8rem;
+        cursor: pointer;
+        width: 100px;
+    }
+    .left{
+        position: absolute;
+        margin-left: -10rem;
+        margin-top: 4rem;
+        cursor: pointer;
+        width: 100px;
+    }
+    .right{
+        position: absolute;
+        margin-left: 10rem;
+        margin-top: 4rem;
+        cursor: pointer;
+        width: 100px;
+    }
+}
+@media screen and (min-width: 768px){
+    .arrowbtn{
+        display: none ;
+    }
+    
+}
+
+.gameover{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(162, 119, 63);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-around;
+}
+.play{
+    display: none !important;
+}
