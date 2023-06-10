@@ -5,7 +5,6 @@ let cols ;
 let board;
 let context;
 let score = 0;
-localStorage.setItem('score',  `${score}`);
 let scores1;
 let scores;
 let bestscoretext;
@@ -13,6 +12,10 @@ let speed = 2650;
 let bestscore = parseInt(localStorage.getItem("score"));
 let w = window.innerWidth;
 let gover = document.getElementById('gameover');
+
+if(bestscore === NaN || bestscore ===null){
+    localStorage.setItem('score',  `${score}`);
+}
 
 //console.log("bestscore: " + bestscore)
 if(w > 768 ){
