@@ -15,6 +15,7 @@ let gover = document.getElementById('gameover');
 
 if(bestscore === NaN || bestscore === null){
     localStorage.setItem('score',  `${score}`);
+    bestscore = parseInt(localStorage.getItem("score"));
 }
 
 //console.log("bestscore: " + bestscore)
