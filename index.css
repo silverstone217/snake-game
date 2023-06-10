@@ -62,25 +62,36 @@ canvas{
         cursor: pointer;
         width: 100px;
     }
+    .gameover{
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(162, 119, 63);
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        justify-content: space-around;
+    }
 }
 @media screen and (min-width: 768px){
     .arrowbtn{
         display: none ;
     }
-    
+    .gameover{
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(162, 119, 63);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        justify-content: space-around;
+    }
 }
 
-.gameover{
-    position: absolute;
-    z-index: 1;
-    background-color: rgb(162, 119, 63);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    justify-content: space-around;
-}
+
 .play{
     display: none !important;
 }

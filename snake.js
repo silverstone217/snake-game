@@ -5,6 +5,7 @@ let cols ;
 let board;
 let context;
 let score = 0;
+localStorage.setItem('score',  `${score}`);
 let scores1;
 let scores;
 let bestscoretext;
